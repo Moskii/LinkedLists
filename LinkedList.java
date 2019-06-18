@@ -1,26 +1,4 @@
-/*
 
-Name: Mahir Hussain
-Student ID: 201322661
-University email address: M.Hussain8@liverpool.ac.uk
-
-Time Complexity and explanation:
-
-appendIfMiss(): O(np)
-- Each variable represents a linked list i.e n = files, p = requests
-- 2 Loops implemented for each linked list. One to iterate through the files and the other to iterate through the requests leading to a time complexity of np.
-- Both iterate through the list at a linear time. So as the data size increase, the time increases at the same rate
-  
-moveToFront(): O(n^2p)
-- Each variable represents a linked list i.e n = files, p = requests
-- Few loops are implemented in order to handle with the linked list carefully. 2 basic loops to iterate through the files and the requests (similar to part a).
-- Extra methods were made to remove the duplication of a file (so another loop till the key is found) and to delete the file from the linked list. 
-  This occurs if the request is already in the files.
-- Thus the time complexity for the files are n^2.
-
-freqCount():
-
-*/
 
 import java.util.*;
 import java.io.*;
@@ -276,6 +254,7 @@ class A2List {
 
   // move the file requested so that order is by non-increasing frequency
   static void freqCount() {
+	  // TBC
     int length = traverseArray(); // Finds the length of files linked list.
   	int[] freqArray = new int[length]; // Initialise frequency array
   	// Setting up the array.
